@@ -18,7 +18,7 @@ async def seed_if_needed():
 
 @app.get("/")
 async def home():
-    return {"msg": "Hello, world v3.  Ships to prod before your coffee cools ☕️"}
+    return {"msg": "Hello, world v3.  Ships to prod before your coffee cools ☕️ and stay cool"}
 
 @app.get("/users")
 async def users(db=Depends(get_db)):
